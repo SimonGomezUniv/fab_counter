@@ -1,0 +1,78 @@
+
+        @page {
+            margin: 0.6in;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f5f0e8;
+            color: #111;
+            margin: 0;
+        }
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.5in 0.4in;
+            box-sizing: border-box;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.2em;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 0.3in;
+        }
+
+        .board {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5in;
+        }
+
+        .player {
+            border: 3px solid #111;
+            border-radius: 1.2rem;
+            padding: 0.35in 0.3in;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25in;
+        }
+
+        .name {
+            font-size: 1.6em;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .life {
+            font-size: 6em;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: -0.08em;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .controls span {
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            border: 2px solid #111;
+            border-radius: 999px;
+            padding: 0.12in 0.18in;
+        }
+        
