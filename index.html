@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAB Life Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="side-ornament left" aria-hidden="true">
+        <div class="ornament-inner">
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+        </div>
+      </aside>
+
+      <main class="battlefield" aria-label="Compteur de vie Flesh and Blood">
+        <section class="player-panel left-panel" data-player="0" aria-label="Joueur 1">
+          <div class="player-header">
+            <input class="player-name-input" type="text" value="Joueur 1" aria-label="Nom du joueur 1" maxlength="18" />
+            <button class="reset-button" type="button" data-reset="0">Reset</button>
+          </div>
+
+          <div class="life-display" aria-live="polite">
+            <button class="zone-button left" type="button" data-player="0" data-change="-1" aria-label="Retirer 1 point au joueur 1">
+              <span>−</span>
+            </button>
+
+            <div class="life-total-wrap">
+              <div class="life-total" id="life-0">20</div>
+            </div>
+
+            <button class="zone-button right" type="button" data-player="0" data-change="1" aria-label="Ajouter 1 point au joueur 1">
+              <span>+</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="player-panel right-panel" data-player="1" aria-label="Joueur 2">
+          <div class="player-header">
+            <input class="player-name-input" type="text" value="Joueur 2" aria-label="Nom du joueur 2" maxlength="18" />
+            <button class="reset-button" type="button" data-reset="1">Reset</button>
+          </div>
+
+          <div class="life-display" aria-live="polite">
+            <button class="zone-button left" type="button" data-player="1" data-change="-1" aria-label="Retirer 1 point au joueur 2">
+              <span>−</span>
+            </button>
+
+            <div class="life-total-wrap">
+              <div class="life-total" id="life-1">20</div>
+            </div>
+
+            <button class="zone-button right" type="button" data-player="1" data-change="1" aria-label="Ajouter 1 point au joueur 2">
+              <span>+</span>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <aside class="side-ornament right" aria-hidden="true">
+        <div class="ornament-inner">
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+          <span class="motif">✦</span>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
